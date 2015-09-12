@@ -1,0 +1,17 @@
+.main-layout {
+  md-toolbar button.md-icon-button {
+    padding-top: 7px;
+    fill: $color;
+  }
+
+  .main-section {
+    height: 80vh;
+
+    .reps {
+      text-align: center;
+      span {
+        font-size: 3em;
+      }
+    }
+  }
+}

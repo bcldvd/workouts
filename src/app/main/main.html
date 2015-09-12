@@ -1,0 +1,46 @@
+<div layout="column" layout-fill class="main-layout">
+  <md-content>
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <md-button class="md-icon-button" aria-label="Settings">
+          <ng-md-icon icon="menu"></ng-md-icon>
+        </md-button>
+        <h2>
+          <span>Workouts - {{ main.lastWorkout.name }}</span>
+        </h2>
+        <span flex></span>
+      </div>
+    </md-toolbar>
+
+    <section layout="row" layout-sm="column" layout-align="center center" layout-wrap class="main-section">
+
+      <md-button class="md-raised md-accent" ng-hide="main.continue" ng-click="main.continueLevel()">
+        Continue with level {{ main.level.name }}
+      </md-button>
+
+      <md-card ng-show="main.continue">
+        <img ng-src="{{main.currentExercise.image}}" class="md-card-image" alt="main.currentExercise.name">
+        <md-card-content>
+          <h2 class="md-title">Exercise {{ main.currentExercise.name }}</h2>
+          <p class="reps" ng-if="main.currentExercise.reps > 0">
+            <span>{{ main.currentExercise.reps }}</span> reps
+          </p>
+          <p class="reps" ng-if="main.currentExercise.reps == 0">
+            As many reps as you can
+          </p>
+        </md-card-content>
+        <div class="md-actions" layout="row" layout-align="center center">
+          <md-button class="md-accent md-raised">Done</md-button>
+        </div>
+      </md-card>
+
+
+      <!--<timer countdown="180" interval="1000">
+        <span ng-show="minutes > 0">{{minutes}}min</span>
+        <span>{{seconds}}s</span>
+      </timer>-->
+
+    </section>
+  </md-content>
+
+</div>

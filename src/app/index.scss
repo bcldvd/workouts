@@ -1,0 +1,28 @@
+/**
+ *  Do not remove this comments bellow. It's the markers used by wiredep to inject
+ *  sass dependencies when defined in the bower.json of your dependencies
+ */
+// bower:scss
+// endbower
+
+$color: #fff;
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,700italic,400italic);
+@import "main/main";
+
+
+html {
+  font-family: 'Roboto', serif;
+}
+
+[layout=row] {
+  flex-direction: row;
+}
+
+
+/**
+ *  Do not remove this comments bellow. It's the markers used by gulp-inject to inject
+ *  all your sass files automatically
+ */
+// injector
+// endinjector

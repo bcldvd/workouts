@@ -11,7 +11,8 @@
       'ui.router',
       'ngMaterial',
       'timer',
-      'ngMdIcons'
+      'ngMdIcons',
+      'pascalprecht.translate'
     ]);
 
 })();

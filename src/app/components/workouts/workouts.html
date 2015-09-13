@@ -1,0 +1,65 @@
+<div class="workouts">
+  <div ng-if="vm.workouts.getCurrentState() == vm.workoutStates.EXERCISE"
+    ng-include="'app/components/workouts/templates/exercise.html'"></div>
+
+  <!-- Rest State -->
+  <md-card ng-if="vm.workouts.getCurrentState() == vm.workoutStates.REST" class="workouts__rest">
+    <md-toolbar>
+      <div class="md-toolbar-tools card-title">
+        <h2 class="md-title">REST</h2>
+      </div>
+    </md-toolbar>
+    <md-card-content>
+      <section layout="row" layout-sm="column" layout-align="center center" layout-wrap class="actualReps">
+      You did:
+        <md-button class="md-fab" aria-label="Minus 1" ng-click="vm.decreaseActualReps()" ng-disabled="vm.actualReps < 1">
+          <ng-md-icon icon="exposure_minus_1"></ng-md-icon>
+        </md-button>
+        <span class="md-display-1">
+          {{ vm.actualReps }}
+        </span>
+        <md-button class="md-fab" aria-label="Plus 1" ng-click="vm.increaseActualReps()">
+          <ng-md-icon icon="exposure_plus_1"></ng-md-icon>
+        </md-button>
+      </section>
+
+      <md-divider></md-divider>
+
+      <div layout="row" layout-align="center center" class="timer">
+        <timer countdown="vm.currentExercise.rest" interval="1000" finish-callback="vm.restDone()" class="md-display-3">
+          <span ng-show="minutes > 0">{{minutes}}min</span>
+          <span>{{seconds}}s</span>
+        </timer>
+      </div>
+    </md-card-content>
+    <div class="nextUp">
+      <md-toolbar>
+        <div class="md-toolbar-tools"
+             translate="WORKOUTS.NEXT_UP"
+             translate-values="{ exercise: vm.nextExercise.name  }">
+        </div>
+      </md-toolbar>
+      <div class="nextUp__preview" layout="row" layout-align="center center" layout-wrap>
+        <img ng-src="{{vm.nextExercise.image}}" class="md-card-image" alt="vm.currentExercise.name">
+        <p ng-if="vm.currentExercise.reps > 0">
+          ( {{ vm.nextExercise.reps }} )
+        </p>
+        <p ng-if="vm.currentExercise.reps == 0">
+          ({{ 'WORKOUTS.AS_MANY_REPS' | translate }})
+        </p>
+      </div>
+    </div>
+  </md-card>
+
+  <!-- Done State -->
+  <md-card ng-if="vm.workouts.getCurrentState() == vm.workoutStates.DONE">
+    <img ng-src="{{vm.currentExercise.image}}" class="md-card-image" alt="vm.currentExercise.name">
+    <md-card-content>
+      <h2 class="md-title">DONE</h2>
+    </md-card-content>
+    <div class="md-actions" layout="row" layout-align="center center">
+      <!--<md-button class="md-accent md-raised">Done</md-button>-->
+    </div>
+  </md-card>
+
+</div>

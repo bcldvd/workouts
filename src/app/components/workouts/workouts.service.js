@@ -8,12 +8,15 @@
   /** @ngInject */
   function workouts(data, $http, $log, $q, _) {
 
-    var workout = null,
-      exercises = [],
-      levels = [],
-      service = {
-        getWorkout: getWorkout,
-        getLevel  : getLevel
+    var workout     = null,
+      exercises     = [],
+      levels        = [],
+      currentState  = null,
+      service       = {
+        getWorkout      : getWorkout,
+        getLevel        : getLevel,
+        getCurrentState : getCurrentState,
+        setCurrentState : setCurrentState
     };
 
     return service;
@@ -50,6 +53,14 @@
         exercise = _.assign(exercise, _.find(exercises, {exerciseId: exercise.exerciseId}));
       });
       return level;
+    }
+
+    function getCurrentState() {
+      return currentState;
+    }
+
+    function setCurrentState(state) {
+     currentState = state;
     }
 
 

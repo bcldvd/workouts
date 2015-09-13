@@ -1,0 +1,6 @@
+{
+  "WORKOUTS": {
+    "AS_MANY_REPS": "As many reps as you can",
+    "NEXT_UP"     : "Next Up : {{exercise}}"
+  }
+}

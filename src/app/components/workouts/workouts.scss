@@ -1,0 +1,47 @@
+.workouts {
+
+  md-card {
+    width: 80vw;
+  }
+
+  .workouts__exercise {
+
+    .card-title {
+      background-color: orange;
+    }
+
+    img {
+      width: 300px;
+    }
+  }
+
+  .workouts__rest {
+
+    .card-title {
+      background-color: $state-1-color;
+    }
+
+    img {
+      width: 10vh;
+    }
+
+    .timer {
+      margin: 5vh;
+    }
+
+    .actualReps {
+      button {
+
+        &.md-fab {
+          padding-top: $fix-ng-md-icon-padding;
+          fill: $color;
+        }
+      }
+    }
+
+    .nextUp__preview {
+      margin: 3vh 0;
+    }
+  }
+
+}

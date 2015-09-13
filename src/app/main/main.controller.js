@@ -13,11 +13,9 @@
     vm.currentLevelId = 0;
     vm.continue = false;
     vm.level = {};
-    vm.currentExercise = {};
-    vm.currentExerciseIndex = 0;
+    vm.workouts = workouts;
 
     vm.continueLevel = continueLevel;
-    vm.nextExercise = nextExercise;
 
     ////////////
 
@@ -38,10 +36,6 @@
     function continueLevel() {
       vm.continue = true;
       vm.currentExercise = vm.level.exercises[0];
-    }
-
-    function nextExercise() {
-      //vm.
     }
 
   }

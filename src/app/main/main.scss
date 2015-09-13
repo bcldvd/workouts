@@ -1,7 +1,25 @@
 .main-layout {
-  md-toolbar button.md-icon-button {
-    padding-top: 7px;
-    fill: $color;
+  md-toolbar {
+
+    &.workout-0 {
+      // State EXERCISE
+      background-color: $state-0-color;
+    }
+
+    &.workout-1 {
+      // State REST
+      background-color: $state-1-color;
+    }
+
+    &.workout-2 {
+      // State DONE
+
+    }
+
+    button.md-icon-button {
+      padding-top: $fix-ng-md-icon-padding;
+      fill: $color;
+    }
   }
 
   .main-section {

@@ -6,9 +6,14 @@
 // endbower
 
 $color: #fff;
+$fix-ng-md-icon-padding: 7px;
+$state-0-color: red;
+$state-1-color: #0044cc;
+$state-2-color: rgb(76,175,80);
 
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,700,700italic,400italic);
 @import "main/main";
+@import "components/workouts/workouts";
 
 
 html {

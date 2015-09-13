@@ -9,22 +9,22 @@
         {
           "exerciseId": 0,
           "reps": 0,
-          "rest": "180"
+          "rest": 3
         },
         {
           "exerciseId": 2,
           "reps": 0,
-          "rest": "180"
+          "rest": 180
         },
         {
           "exerciseId": 3,
           "reps": 0,
-          "rest": "180"
+          "rest": 180
         },
         {
           "exerciseId": 1,
           "reps": 0,
-          "rest": "180"
+          "rest": 180
         }
       ],
       "warmup": true,
@@ -49,22 +49,22 @@
     {
       "exerciseId": 0,
       "name": "A",
-      "image": "http://lorempixel.com/400/200/sports/"
+      "image": "assets/images/A.png"
     },
     {
       "exerciseId": 1,
       "name": "A1",
-      "image": "http://lorempixel.com/400/200/sports/"
+      "image": "assets/images/A1.png"
     },
     {
       "exerciseId": 2,
       "name": "B",
-      "image": "http://lorempixel.com/400/200/sports/"
+      "image": "assets/images/B.png"
     },
     {
       "exerciseId": 3,
       "name": "C",
-      "image": "http://lorempixel.com/400/200/sports/"
+      "image": "assets/images/C.png"
     }
   ]
 }

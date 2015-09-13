@@ -1,0 +1,22 @@
+<!-- Exercise State -->
+<md-card class="workouts__exercise">
+  <md-toolbar>
+    <div class="md-toolbar-tools card-title">
+      <h2 class="md-title">Exercise {{ vm.currentExercise.name }}</h2>
+    </div>
+  </md-toolbar>
+  <section layout="row" layout-align="center center">
+    <img ng-src="{{vm.currentExercise.image}}" class="md-card-image" alt="vm.currentExercise.name">
+  </section>
+  <md-card-content class="md-headline">
+    <p class="reps" ng-if="vm.currentExercise.reps > 0">
+      <span>{{ vm.currentExercise.reps }}</span> reps
+    </p>
+    <p class="reps" ng-if="vm.currentExercise.reps == 0">
+      {{ 'WORKOUTS.AS_MANY_REPS' | translate }}
+    </p>
+  </md-card-content>
+  <div class="md-actions" layout="row" layout-align="center center">
+    <md-button class="md-accent md-raised" ng-click="vm.exerciseDone()">Done</md-button>
+  </div>
+</md-card>

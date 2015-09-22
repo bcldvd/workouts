@@ -1,5 +1,4 @@
 {
-  "name": "Methode Lafay",
   "levels": [
     {
       "levelId": 0,
@@ -43,28 +42,6 @@
           ]
         }
       ]
-    }
-  ],
-  "exercises": [
-    {
-      "exerciseId": 0,
-      "name": "A",
-      "image": "assets/images/A.png"
-    },
-    {
-      "exerciseId": 1,
-      "name": "A1",
-      "image": "assets/images/A1.png"
-    },
-    {
-      "exerciseId": 2,
-      "name": "B",
-      "image": "assets/images/B.png"
-    },
-    {
-      "exerciseId": 3,
-      "name": "C",
-      "image": "assets/images/C.png"
     }
   ]
 }

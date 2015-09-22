@@ -6,7 +6,7 @@
     .factory('workouts', workouts);
 
   /** @ngInject */
-  function workouts(data, $http, $log, $q, _) {
+  function workouts($http, $log, $q, _, workoutApi, levelsApi, exercisesApi) {
 
     var workout     = null,
       exercises     = [],
@@ -22,11 +22,10 @@
     return service;
 
     function getWorkout() {
-
       var deferred = $q.defer();
 
       if (workout === null) {
-        return $http.get(data)
+        return $http.get(workoutApi)
           .then(getWorkoutComplete)
           .catch(getWorkoutFailed);
       } else {

@@ -7,7 +7,6 @@
     .constant('malarkey', malarkey)
     .constant('toastr', toastr)
     .constant('moment', moment)
-    .constant('_', _)
-    .constant('data','assets/data.json');
+    .constant('_', _);
 
 })();

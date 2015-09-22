@@ -1,0 +1,70 @@
+{
+  "name": "Methode Lafay",
+  "levels": [
+    {
+      "levelId": 0,
+      "name": "1a - Test",
+      "timesPerWeek": 1,
+      "exercises": [
+        {
+          "exerciseId": 0,
+          "reps": 0,
+          "rest": 3
+        },
+        {
+          "exerciseId": 2,
+          "reps": 0,
+          "rest": 180
+        },
+        {
+          "exerciseId": 3,
+          "reps": 0,
+          "rest": 180
+        },
+        {
+          "exerciseId": 1,
+          "reps": 0,
+          "rest": 180
+        }
+      ],
+      "warmup": true,
+      "levelUp": [
+        {
+          "nextLevelId": 1,
+          "exercises": [
+            {
+              "exerciceId": 2,
+              "minReps": 0
+            },
+            {
+              "exerciseId": 1,
+              "minReps": 2
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "exerciseId": 0,
+      "name": "A",
+      "image": "assets/images/A.png"
+    },
+    {
+      "exerciseId": 1,
+      "name": "A1",
+      "image": "assets/images/A1.png"
+    },
+    {
+      "exerciseId": 2,
+      "name": "B",
+      "image": "assets/images/B.png"
+    },
+    {
+      "exerciseId": 3,
+      "name": "C",
+      "image": "assets/images/C.png"
+    }
+  ]
+}

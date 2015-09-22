@@ -24,12 +24,12 @@
     function activate() {
       workouts.getWorkout().then(function (workout) {
         vm.lastWorkout = workout;
-        vm.currentLevelId = getCurentLevelId();
+        vm.currentLevelId = getCurrentLevelId();
         vm.level = workouts.getLevel(vm.currentLevelId);
       });
     }
 
-    function getCurentLevelId() {
+    function getCurrentLevelId() {
       return 0;
     }
 

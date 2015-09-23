@@ -1,13 +1,6 @@
 sudo: required
 before_script:
+  - npm install
   - npm install gulp
   - npm install phantomjs
-  - npm install wrench
-  - npm install gulp-util
-  - npm install gulp-load-plugins
-  - npm install gulp-connect
-  - npm install browser-sync
-  - npm install gulp-protractor
-  - npm install wiredep
-  - npm install lodash
 script: gulp test

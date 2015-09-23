@@ -4,7 +4,7 @@
   "scripts": {
     "build": "gulp build",
     "start": "gulp connect",
-    "postinstall": "npm install & npm run build"
+    "postinstall": "bower install & npm run build"
   },
   "devDependencies": {
     "gulp": "~3.9.0",

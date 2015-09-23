@@ -8,4 +8,5 @@ before_script:
   - npm install gulp-connect
   - npm install browser-sync
   - npm install gulp-protractor
+  - npm install wiredep
 script: gulp test

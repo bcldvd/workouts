@@ -7,4 +7,5 @@ before_script:
   - npm install gulp-load-plugins
   - npm install gulp-connect
   - npm install browser-sync
+  - npm install gulp-protractor
 script: gulp test

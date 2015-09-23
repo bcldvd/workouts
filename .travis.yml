@@ -6,4 +6,5 @@ before_script:
   - npm install gulp-util
   - npm install gulp-load-plugins
   - npm install gulp-connect
+  - npm install browser-sync
 script: gulp test

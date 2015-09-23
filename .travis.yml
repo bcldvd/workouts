@@ -9,4 +9,5 @@ before_script:
   - npm install browser-sync
   - npm install gulp-protractor
   - npm install wiredep
+  - npm install lodash
 script: gulp test

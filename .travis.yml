@@ -1,4 +1,6 @@
 sudo: required
 before_script:
   - npm install gulp
+  - npm install wrench
+  - npm install phantomjs
 script: gulp test

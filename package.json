@@ -54,6 +54,7 @@
   },
   "scripts": {
     "build": "gulp build",
-    "start": "gulp connect"
+    "start": "gulp connect",
+    "postinstall":"npm run build & npm run start"
   }
 }

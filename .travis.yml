@@ -3,4 +3,5 @@ before_script:
   - npm install
   # - npm install gulp
   - npm install phantomjs
+  - bower install
 script: gulp test

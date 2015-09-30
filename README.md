@@ -1,6 +1,8 @@
 Workouts
 =====================
 
+[![Build Status](https://img.shields.io/travis/bcldvd/workouts/develop.svg?style=flat-square)](http://travis-ci.org/bcldvd/workouts)
+
 Workouts app to test Angular Material Design
 
 ## Getting Started

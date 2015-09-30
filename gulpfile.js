@@ -6,8 +6,9 @@
 
 'use strict';
 
-var gulp = require('gulp');
-var wrench = require('wrench');
+var gulp = require('gulp'),
+  wrench = require('wrench'),
+  connect = require('gulp-connect');
 
 /**
  *  This will load all js or coffee files in the gulp directory
@@ -26,4 +27,13 @@ wrench.readdirSyncRecursive('./gulp').filter(function(file) {
  */
 gulp.task('default', ['clean'], function () {
   gulp.start('build');
+});
+
+
+gulp.task('heroku', function() {
+  connect.server({
+    root: 'dist',
+    port: process.env.PORT || 5000, // localhost:5000
+    livereload: false
+  });
 });
